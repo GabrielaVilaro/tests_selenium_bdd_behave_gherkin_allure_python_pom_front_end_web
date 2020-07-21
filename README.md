@@ -12,3 +12,17 @@ Requisitos:
     Python >= 3.5
     Instalar las dependencias del proyecto: pip3 install -r requirements.txt
     Pycharm
+    
+21/07/20
+
+Agregué el primer test en WebTest.feature y allure framework report.
+
+**Reporte HTML usando Allure Framework, para correr allure:**
+
+     behave -f allure_behave.formatter:AllureFormatter -o allure_result_folder ./features
+
+     allure serve allure_result_folder
+ 
+ <a href="https://ibb.co/9HgWKBp"><img src="https://i.ibb.co/MkS7wKg/Screen-Shot-2020-07-21-at-18-42-23.png" alt="Screen-Shot-2020-07-21-at-18-42-23" border="0"></a>
+
+
