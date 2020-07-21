@@ -1,5 +1,5 @@
 # test_bdd_behave_gherkin_python_front_end_web
-Framework test con Selenium, BDD, Behave, Gherkin, Python, Unttest, (Y varias liberías más) en Front-End Web
+Framework test con Selenium, BDD, Behave, Gherkin, Python, Unttest, Allure Framework (Y varias liberías más) en Front-End Web
 
 Inicio 20/07/20
 
