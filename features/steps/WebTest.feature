@@ -16,8 +16,8 @@ Feature: Test page automationpractice.com
     Then I assert that the title of the create an account page is AUTHENTICATION
     Then Close the browser
 
-    @Browser
-    Scenario: Open browser, assert phone number
-      Given I start the app in the URL http://automationpractice.com/index.php
-      And I assert number phone 0123-456-789
-      Then Close the browser
+  @Browser
+  Scenario: Open browser in index page, assert phone number
+    Given I start the app in the URL http://automationpractice.com/index.php
+    And I assert number phone 0123-456-789
+    Then Close the browser
