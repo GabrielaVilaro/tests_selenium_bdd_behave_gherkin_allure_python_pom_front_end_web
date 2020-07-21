@@ -7,9 +7,9 @@ Feature: Test page automationpractice.com
     Given Open Browser Aplication
 
   @Browser
-  Scenario: Open url
+  Scenario: Open url, and assert page create an account
     Given I start the app in the URL http://automationpractice.com/index.php
-    Then I click on sign in
+    And I click on sign in
     And I write the email in the email address field
-    And I click on create an account
-    And I assert that the title of the create an account page is AUTHENTICATION
+    When I click on create an account
+    Then I assert that the title of the create an account page is AUTHENTICATION
