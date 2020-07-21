@@ -5,6 +5,7 @@ Feature: Test page automationpractice.com
   @Browser
   Scenario: Open Browser
     Given Open Browser Aplication
+    Then Close the browser
 
   @Browser
   Scenario: Open url, and assert page create an account
@@ -13,3 +14,4 @@ Feature: Test page automationpractice.com
     And I write the email in the email address field
     When I click on create an account
     Then I assert that the title of the create an account page is AUTHENTICATION
+    Then Close the browser

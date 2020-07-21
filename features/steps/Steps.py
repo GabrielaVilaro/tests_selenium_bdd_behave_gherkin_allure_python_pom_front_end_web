@@ -16,6 +16,11 @@ class StepsDefinitions():
     def step_impl(self, URL):
         Selenium.open_browser(self, URL=URL)
 
+    @then("Close the browser")
+    def step_impl(self):
+        Selenium.tearDown(self)
+
+
     @step("I click on sign in")
     def step_impl(self):
         PageIndex.push_sign_in(self)
@@ -32,6 +37,7 @@ class StepsDefinitions():
     @step('I assert that the title of the create an account page is AUTHENTICATION')
     def step_impl(self):
         self.title_on_page_create_an_Account = PageCreateAnAccount.return_title_of_create_authentication(self)
+        print(self.title_on_page_create_an_Account)
         assert self.title_on_page_create_an_Account == 'AUTHENTICATION', 'Not match'
 
 
