@@ -12,4 +12,4 @@ class Inicializar():
     Environment = 'Test'
 
     if Environment == 'Test':
-        URL = 'https://www.phptravels.net/home'
+        URL = 'http://automationpractice.com/index.php'
