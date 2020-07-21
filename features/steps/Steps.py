@@ -34,10 +34,16 @@ class StepsDefinitions():
     def step_impl(self):
         PageSignIn.push_create_an_account_button(self)
 
+    @step('I assert number phone 0123-456-789')
+    def step_impl(self):
+        self.phone_number_of_index_page = PageIndex.return_phone_number_of_banner(self)
+        print('The number phone is: ' + self.phone_number_of_index_page)
+        assert self.phone_number_of_index_page == '0123-456-789', 'Not macht'
+
     @step('I assert that the title of the create an account page is AUTHENTICATION')
     def step_impl(self):
         self.title_on_page_create_an_Account = PageCreateAnAccount.return_title_of_create_authentication(self)
-        print(self.title_on_page_create_an_Account)
+        print('Titile of page: ' + self.title_on_page_create_an_Account)
         assert self.title_on_page_create_an_Account == 'AUTHENTICATION', 'Not match'
 
 
