@@ -5,7 +5,7 @@ Inicio 20/07/20
 
 Proyecto con el fin de practicar BDD.
 
-Página a automatizar https://www.phptravels.net/home
+Página a automatizar http://automationpractice.com/index.php
 
 Requisitos:
 
