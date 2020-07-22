@@ -31,6 +31,7 @@ class Functions(Inicializar):
                         for _ in range(10))
         return self.prefix + random_part + '@' + self.domain
 
+    # Función que genera un telefono random
     def generate_number_phone(self):
         self.random_number = ''.join(random.choice(string.digits)
                                 for _ in range(10))
