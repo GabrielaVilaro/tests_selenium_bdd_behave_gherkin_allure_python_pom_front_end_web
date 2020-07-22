@@ -13,9 +13,6 @@ Requisitos:
     Instalar las dependencias del proyecto: pip3 install -r requirements.txt
     Pycharm
     
-21/07/20
-
-Agregué el primer test en WebTest.feature y allure framework report.
 
 **Reporte HTML usando Allure Framework, para correr allure:**
 
