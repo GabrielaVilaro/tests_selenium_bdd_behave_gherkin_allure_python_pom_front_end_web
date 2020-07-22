@@ -20,7 +20,7 @@ class Functions(Inicializar):
         return self.driver
 
     def tearDown(self):
-        print("Se cerrará  el DRIVER")
+        print("Close the DRIVER")
         self.driver.quit()
 
      #Función que genera un email random
