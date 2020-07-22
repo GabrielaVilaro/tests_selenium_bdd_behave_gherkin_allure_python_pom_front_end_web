@@ -21,3 +21,11 @@ Feature: Test page automationpractice.com
     Given I start the app in the URL http://automationpractice.com/index.php
     And I assert number phone 0123-456-789
     Then Close the browser
+
+  @Browser
+  Scenario: Open browser and Sign In page
+    Given I start the app in the URL http://automationpractice.com/index.php
+    Then I click on sign in
+    And I login with user static registered
+    Then I assert the name of account user is Test User
+    Then Close the browser
