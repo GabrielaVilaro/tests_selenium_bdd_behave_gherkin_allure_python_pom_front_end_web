@@ -20,7 +20,6 @@ class StepsDefinitions():
     def step_impl(self):
         Selenium.tearDown(self)
 
-
     @step("I click on sign in")
     def step_impl(self):
         PageIndex.push_sign_in(self)
@@ -34,17 +33,17 @@ class StepsDefinitions():
     def step_impl(self):
         PageSignIn.push_create_an_account_button(self)
 
-    @step('I assert number phone 0123-456-789')
-    def step_impl(self):
+    @step('I assert number phone (.*)')
+    def step_impl(self, number_phone='0123-456-789'):
         self.phone_number_of_index_page = PageIndex.return_phone_number_of_banner(self)
         print('The number phone is: ' + self.phone_number_of_index_page)
-        assert self.phone_number_of_index_page == '0123-456-789', 'Not macht'
+        assert self.phone_number_of_index_page == number_phone, 'Not macht'
 
-    @step('I assert that the title of the create an account page is AUTHENTICATION')
-    def step_impl(self):
+    @step('I assert that the title of the create an account page is (.*)')
+    def step_impl(self, title='AUTHENTICATION'):
         self.title_on_page_create_an_Account = PageCreateAnAccount.return_title_of_create_authentication(self)
         print('Titile of page: ' + self.title_on_page_create_an_Account)
-        assert self.title_on_page_create_an_Account == 'AUTHENTICATION', 'Not match'
+        assert self.title_on_page_create_an_Account == title, 'Not match'
 
 
 
