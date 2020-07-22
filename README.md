@@ -19,7 +19,11 @@ Agregué el primer test en WebTest.feature y allure framework report.
 
 **Reporte HTML usando Allure Framework, para correr allure:**
 
+     Lanzar todos los tests:
+
      behave -f allure_behave.formatter:AllureFormatter -o allure_result_folder ./features
+     
+     Abrir el reporte HTML:
 
      allure serve allure_result_folder
  
